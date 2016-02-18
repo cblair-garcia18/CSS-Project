@@ -1,0 +1,31 @@
+body{
+background:
+	url(images.snow.gif) 1450px 680px no-repeat,
+	url(mountain.jpg) 1450px 680px no-repeat,
+	background-color: #475274;
+	text-align: center;
+li {
+    display: inline;
+}
+
+img {
+    
+	width: 1450px;
+	height: 680px;
+	position: fixed;
+	top: 181px;
+    left: 1px;
+	opacity: 0.4;
+	float: center;
+	}
+	
+h1 {
+background-color:lightgrey;
+   color:black;
+   font-family: Helvetica;
+   font-size: 450%;
+}
+	
+
+	
+	

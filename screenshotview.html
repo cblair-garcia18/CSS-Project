@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+h1 {
+background-color:lightgrey;
+   color:black;
+   font-family: Helvetica;
+   font-size: 450%;
+}
+
+ul {
+    float: left;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+a {
+    float: left;
+    width: 8em;
+    text-decoration: none;
+    color: white;
+    background-color: blue;
+    padding: 0.2em 0.6em;
+   
+}
+
+a:hover {
+    background-color: lightblue;
+}
+
+li {
+    display: inline;
+
+	<!--Photoviewer stuff-->
+	
+#photo-viewer {
+  float: left;
+  position: left;
+  height: 300px;
+  overflow: hidden;}
+
+
+#photo-viewer img {
+  float left;
+  position: left;
+  max-width: 50%;
+  max-height: 50%;
+  top: 50%;
+  left: 50%;}
+
+#thumbnails {
+	margin: 10px 5px 0px 0px;
+  height: 60px;}
+
+a.active {
+  opacity: 0.2;}
+
+
+.gallery{
+  width: 400px;
+  padding: 20px;
+  float: left;
+  margin: 200px 
+  80px;
+  
+  }
+
+.standfirst {
+  margin: 0px;}	
+  
+  #.alignleft
+  
+	
+</style>
+
+<head>
+<!--<style>
+
+#grad1 {
+    height: 200px;
+    background: red; /* For browsers that do not support gradients */    
+    background: -webkit-linear-gradient(left top, , yellow); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right, red, yellow); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right, red, yellow); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom right, red, yellow); /* Standard syntax (must be last) */
+}
+
+</style> -->
+<link rel="stylesheet" href="CSS/layout.css"> 
+<title>Screenshots-CSS</h1>
+<ul>
+<li><a href="Website.html">Home</a></li>
+<li><a href="screenshotview.html">Screenshots</a></li>
+<li><a href="About Us.html">About the Team</a></li>
+</ul>
+</head>
+
+<body background="images/mountain.jpg">
+
+<section class="page panel">
+      <h2>Screenshots</h2>
+      <div class="gallery" style="float: left; margin: 200px 80px;">
+        <div id="photo-viewer"></div>
+        <div id="thumbnails">
+          <a href="images/appscreenshot1.jpg" class = "thumb active" title="Menu Screen">
+            <img src="images/appthumb1.jpg" alt="Menu Screen" width = "125px" height="199" style="float:left;" /></a>
+          <a href="images/appscreenshot2.jpg" class = "thumb" title="Spec Menu">
+            <img src="images/appthumb2.jpg" alt="Spec Menu" width = "125px" height="199" style="float:left;"/></a> 
+        </div>
+      </div>
+    </section>
+
+
+<img src="images/snowboard.png">
+
+<script src="jquery-1.11.1.js"></script>
+    <script src="jquery.js"></script>
+
+</body>
+
+</html>
