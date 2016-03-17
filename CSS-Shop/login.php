@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html>
+
+
+
 <?php
 $cookie_name = "username";
 $cookie_value = "Erin Morrison";
