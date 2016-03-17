@@ -1,0 +1,79 @@
+body{
+ text-align: center;
+ 
+ font-family: "Helvetica";
+background: #ffffff url("images/gradient.jpg") repeat-x top;
+ 
+	
+}
+ 
+
+input #name #pw #email {
+
+horizontal-align: center;
+}
+
+
+h1 {
+    text-align: left;
+	background-color: red;
+}
+
+
+#grad{
+	 background: red; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(red, white); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(red, white); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(red, white); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(red, white); /* Standard syntax (must be last) */
+}
+
+
+a.cart {
+	
+}
+
+
+div.ad {
+    width: 50px;
+	height: 75px;
+    padding: 100px;
+    border: 2px solid navy;
+    margin: 25px;
+	position: fixed;
+    right: 0px;
+}
+
+
+div.questionnaire {
+	padding-left: 45%;
+	text-align: left;
+}
+
+
+#search{
+	
+	text-align: right;
+	right: 5px;
+	
+}
+
+
+ul.reel{
+	width: 320px;
+	height: 87px;
+}
+
+
+ul.user{
+	list-style-type: none;
+	text-align:right;
+	font-size: 20px;
+	position: fixed;
+	right: 55px;
+}
+
+
+li {
+    display: inline;
+}
