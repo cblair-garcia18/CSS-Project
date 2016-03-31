@@ -1,6 +1,60 @@
 <!DOCTYPE html>
 <html>
 
+<?php
+$cookie_name = "username";
+$cookie_value = "Erin Morrison";
+setcookie($cookie_name, $cookie_value, time() + (86400 * 30), "/");
+?>
+<html>
+
+<body>
+
+<?php
+if(!isset($_COOKIE[$cookie_name])) {
+    echo "Welcome back, " . $cookie_name . " " ;
+} else {
+    echo "Welcome to CSS, " . $_COOKIE[$cookie_name];
+}
+?>
+
+</body>
+</html>
+
+<script type="text/javascript">
+
+var username, password;
+
+function values()
+{
+	username= document.getElementById("username");
+	password= document.getElementById("password");
+}
+
+function login()
+{
+	if (username = "emorrison19")
+	{
+		if (password = "Thisisatest6")
+		{
+			alert("Welcome!");
+			window.location.href = 'file:///Z:/public_html/repos/CSS-Project/CSS-Shop/index.html';
+		}
+		else
+		{
+			alert("You have entered an incorrect username and/or password");
+		}
+	}
+	else
+		{
+			alert("You have entered an incorrect username and/or password");
+		}
+}
+
+</script>
+
+
+
 <head>
 
 <link rel="stylesheet" type="text/css" href="css/menus.css">
