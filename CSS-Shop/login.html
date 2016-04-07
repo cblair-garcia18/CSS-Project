@@ -12,28 +12,30 @@ var username, password;
 
 function values()
 {
-	username= document.getElementById("username");
-	password= document.getElementById("password");
+	username = document.getElementById("username");
+	password = document.getElementById("password");
 }
 
 function login()
 {
-	if (username = "emorrison19")
+	values()
+	if (username.value == "emorrison19")
 	{
-		if (password = "Thisisatest6")
+		if (password.value == "Thisisatest6")
 		{
 			alert("Welcome!");
-			window.location.href = 'file:///Z:/public_html/repos/CSS-Project/CSS-Shop/index.html';
+			window.location.href = 'index.html';
 		}
 		else
 		{
-			alert("You have entered an incorrect username and/or password");
+			alert("You have entered an incorrect password");
 		}
 	}
+	
 	else
-		{
-			alert("You have entered an incorrect username and/or password");
-		}
+	{
+		alert("You have entered an incorrect username");
+	}
 }
 
 </script>
@@ -42,7 +44,7 @@ function login()
 
 
 
-
+<!--
 
 
 
@@ -77,7 +79,7 @@ function login()
   
 </h1>
 
-
+-->
 
 <body>
 
