@@ -8,17 +8,55 @@
 
 <script type="text/javascript">
 
-var username, password;
+var username, password, notification;
 
 function values()
 {
 	username = document.getElementById("username");
 	password = document.getElementById("password");
+	notification = "You have entered an incorrect username and/or password";
 }
+
+/*
+function fetch()
+{
+	values() 
+	$.ajax({
+	url: 'php/fetch.php',
+	method: 'get',
+	data:{name: username, password},
+	
+	success:function(data)
+	{
+	alert("Success");
+	}
+	error:function(data)
+	{
+	alert("error");
+	}
+	});
+	
+	
+	function showname(username)
+	{
+	alert(username);
+	}
+	
+	
+} 
+
+*/
+
+
+function update() {
+	var el = document.getElementById('notification');
+	el.textContent=notification;
+	}
 
 function login()
 {
-	values()
+	values();
+	//fetch();
 	if (username.value == "emorrison19")
 	{
 		if (password.value == "Thisisatest6")
@@ -28,23 +66,19 @@ function login()
 		}
 		else
 		{
-			alert("You have entered an incorrect password");
+			update();
 		}
 	}
 	
 	else
 	{
-		alert("You have entered an incorrect username");
+		update();
 	}
 }
 
+
 </script>
 
-
-
-
-
-<!--
 
 
 
@@ -79,7 +113,6 @@ function login()
   
 </h1>
 
--->
 
 <body>
 
@@ -91,6 +124,7 @@ function login()
 <input type="text" id="username" placeholder="Username...">
 <input type="password" id="password" placeholder="Password...">
 <input type="button" onclick="login()" value="Log In">
+<div id="notification" >  </div>
 </div>
 
 
