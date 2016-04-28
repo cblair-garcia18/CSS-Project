@@ -56,6 +56,11 @@ div.questionnaire {
 	
 }
 
+#notification{
+	color: red;
+}
+
+
 
 ul.reel{
 	width: 320px;
